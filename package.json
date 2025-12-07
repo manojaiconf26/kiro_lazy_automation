@@ -1,0 +1,23 @@
+{
+  "name": "release-notes-generator",
+  "version": "1.0.0",
+  "description": "Web application for generating release notes and changelogs from GitHub repositories",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --workspace=frontend && npm install --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "test": "npm run test --workspaces",
+    "test:frontend": "npm run test --workspace=frontend",
+    "test:backend": "npm run test --workspace=backend"
+  },
+  "keywords": ["release-notes", "changelog", "github"],
+  "author": "",
+  "license": "MIT"
+}
